@@ -32,7 +32,12 @@ const Cards = () => {
 	];
 
 	return (
-		<Grid container style={{marginTop: 20}} justify="center" spacing={4}>
+		<Grid
+			container
+			style={{ marginTop: 20, width: "100%" }}
+			justify="center"
+			spacing={4}
+		>
 			{cardContents.map((cardContent) => (
 				<Grid item key={cardContent.cardID}>
 					<MediaCard cardContent={cardContent} />
